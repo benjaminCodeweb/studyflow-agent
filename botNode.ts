@@ -131,7 +131,7 @@ export default defineAgent({
       }),
       // VAD and turn detection are used to determine when the user is speaking and when the agent should respond
       // See more at https://docs.livekit.io/agents/build/turns
-      turnDetection: new livekit.turnDetector.MultilingualModel(),
+      
       vad: ctx.proc.userData.vad! as silero.VAD,
     });
 
