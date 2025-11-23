@@ -7,6 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
+    "outDir": "../dist",
     "module": "nodenext",
     "target": "esnext",
     "types": [],
@@ -22,6 +23,7 @@
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": false,
+    "allowJs": true,
 
     // Style Options
     // "noImplicitReturns": true,
