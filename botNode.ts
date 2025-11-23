@@ -19,7 +19,7 @@ import { fileURLToPath } from 'node:url';
 import { z } from 'zod';
 import type { RowDataPacket } from "mysql2";
 
-import { db } from "../db/db.js";
+import { db } from "./db.js";
 
 import OpenAI from 'openai';
 
