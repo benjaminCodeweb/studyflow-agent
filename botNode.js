@@ -8,7 +8,7 @@ import { BackgroundVoiceCancellation } from '@livekit/noise-cancellation-node';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'node:url';
 import { z } from 'zod';
-import { db } from "../db/db.js";
+import { db } from "./db.js";
 import OpenAI from 'openai';
 dotenv.config({ path: '.env' });
 class Assistant extends voice.Agent {
