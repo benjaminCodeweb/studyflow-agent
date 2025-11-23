@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "tsx botNode.ts",
     "build": "tsc",
-    "start": "node botNode.js dev && pnpm download-files"
+    "start": "node botNode.js dev && pnpm download-files",
+    "download-models": "pnpm download-files"
+
   },
   "dependencies": {
     "@livekit/agents": "^1.0.3",
