@@ -1,0 +1,27 @@
+{
+  "name": "chatpdf-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "bot": "cross-env DEBUG=* node bot.js"
+  },
+  "dependencies": {
+    "@livekit/agents": "^1.0.3",
+    "@livekit/agents-plugin-cartesia": "^1.0.3",
+    "@livekit/agents-plugin-deepgram": "^1.0.3",
+    "@livekit/agents-plugin-livekit": "^1.0.3",
+    "@livekit/agents-plugin-openai": "^1.0.3",
+    "@livekit/agents-plugin-silero": "^1.0.3",
+    "@livekit/noise-cancellation-node": "^0.1.9",
+    "assemblyai": "^4.16.1",
+    "cartesia-js": "^1.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^17.2.2",
+    "fs": "^0.0.1-security",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
