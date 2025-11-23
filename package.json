@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx botNode.ts",
     "build": "tsc",
-    "start": "node botNode.js"
+    "start": "node botNode.js dev"
   },
   "dependencies": {
     "@livekit/agents": "^1.0.3",
