@@ -6,7 +6,7 @@
     "dev": "tsx botNode.ts",
     "build": "tsc",
     "start": "node botNode.js dev && pnpm download-files",
-    "postinstall": "node -e \"process.platform !== 'win32' && process.exit(require('child_process').spawnSync('pnpm', ['exec','agents','download-files'], { stdio: 'inherit' }).status)\""
+    "postinstall": "node -e \"process.platform !== 'win32' && process.exit(require('child_process').spawnSync('pnpm', ['exec','livekit-agents','download-files'], { stdio: 'inherit' }).status)\""
   },
   "dependencies": {
     "@livekit/agents": "^1.0.3",
