@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "bot": "cross-env DEBUG=* node bot.js"
-  },
+  "dev": "tsx botNode.ts",
+  "build": "tsc",
+  "start": "node botNode.js"
+},
   "dependencies": {
     "@livekit/agents": "^1.0.3",
     "@livekit/agents-plugin-cartesia": "^1.0.3",
