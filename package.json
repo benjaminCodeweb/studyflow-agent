@@ -5,7 +5,6 @@
   "packageManager": "npm@10.9.4",
   
   "scripts": {
-     "preinstall": "npm config set onnxruntime-node-install=false",
     "dev": "tsx botNode.ts",
     "build": "tsc",
     "start": "node botNode.js"
