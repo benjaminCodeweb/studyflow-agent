@@ -1,3 +1,9 @@
+import { ensureModels } from "@livekit/agents";
+
+// 🔽 2. Descargar modelos ONNX antes de iniciar el bot
+await ensureModels();
+console.log("🔊 Modelos descargados, iniciando bot...");
+
 import { WorkerOptions, cli, defineAgent, llm, metrics, voice, } from '@livekit/agents';
 import * as cartesia from '@livekit/agents-plugin-cartesia';
 import * as deepgram from '@livekit/agents-plugin-deepgram';
