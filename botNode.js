@@ -1,16 +1,3 @@
-import { TurnDetector } from "@livekit/agents-plugin-livekit";
-import path from "path";
-
-const modelPath = path.join(process.cwd(), "livekit/turn-detector/onnx/model_q8.onnx");
-console.log("📦 Cargando modelo de turn-detector:", modelPath);
-const detector = new TurnDetector({
-  model: {
-    type: "onnx",
-    path: modelPath
-  }
-});
-console.log("✅ Modelo cargado correctamente!");
-
 
 import { WorkerOptions, cli, defineAgent, llm, metrics, voice, } from '@livekit/agents';
 import * as cartesia from '@livekit/agents-plugin-cartesia';
@@ -125,7 +112,7 @@ export default defineAgent({
             }),
             // VAD and turn detection are used to determine when the user is speaking and when the agent should respond
             // See more at https://docs.livekit.io/agents/build/turns
-            turnDetection: new livekit.turnDetector.MultilingualModel(),
+            
             vad: ctx.proc.userData.vad,
         });
         // To use a realtime model instead of a voice pipeline, use the following session setup instead:
