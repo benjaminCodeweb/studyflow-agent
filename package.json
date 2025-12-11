@@ -6,6 +6,7 @@
   
   "scripts": {
     "dev": "tsx botNode.ts",
+    "prestart": "agents download-files",
     "build": "tsc",
     "start": "node botNode.js start"
     
