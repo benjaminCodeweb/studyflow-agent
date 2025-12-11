@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "tsx botNode.ts",
     "build": "tsc",
-    "start": "node botNode.js"
+    "start": "node botNode.js start"
     
   
   },
