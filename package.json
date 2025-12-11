@@ -2,10 +2,12 @@
   "name": "chatpdf-bot",
   "version": "1.0.0",
   "type": "module",
+  "packageManager": "npm@10.9.4",
   "scripts": {
     "dev": "tsx botNode.ts",
     "build": "tsc",
     "start": "node botNode.js dev "
+  
   },
   "dependencies": {
     "@livekit/agents-plugin-cartesia": "^1.0.3",
