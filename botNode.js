@@ -1,8 +1,16 @@
-import { ensureModels } from "@livekit/agents";
+import { TurnDetector } from "@livekit/agents-plugin-livekit";
+import path from "path";
 
-// 🔽 2. Descargar modelos ONNX antes de iniciar el bot
-await ensureModels();
-console.log("🔊 Modelos descargados, iniciando bot...");
+const modelPath = path.join(process.cwd(), "livekit/turn-detector/onnx/model_q8.onnx");
+console.log("📦 Cargando modelo de turn-detector:", modelPath);
+const detector = new TurnDetector({
+  model: {
+    type: "onnx",
+    path: modelPath
+  }
+});
+console.log("✅ Modelo cargado correctamente!");
+
 
 import { WorkerOptions, cli, defineAgent, llm, metrics, voice, } from '@livekit/agents';
 import * as cartesia from '@livekit/agents-plugin-cartesia';
