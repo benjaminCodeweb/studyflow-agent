@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "tsx botNode.ts",
     "build": "tsc",
+    "postinstall": "node download-model.js",
     "start": "node botNode.js"
+    
   
   },
   "dependencies": {
