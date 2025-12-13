@@ -6,9 +6,9 @@
   
   "scripts": {
     "dev": "tsx botNode.ts",
-    "prestart": "agents download-files",
+    "prestart": "npx agents download-files",
     "build": "tsc",
-    "start": "node botNode.js start"
+    "start": "npx agents start  botNode.js"
     
   
   },
