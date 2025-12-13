@@ -7,7 +7,7 @@
   "scripts": {
    
     "build": "tsc",
-    "start": "node  botNode.js"
+    "start": "node  botNode.js start"
     
   
   },
