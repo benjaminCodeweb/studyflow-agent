@@ -7,7 +7,8 @@
   "scripts": {
    "dev": "npx agents dev botNode.ts",
     "build": "tsc",
-    "start": "node  botNode.js start"
+    "prestart": "npx agents download-files",
+    "start": "node  botNode.js"
     
   
   },
