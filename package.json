@@ -5,8 +5,7 @@
   "packageManager": "npm@10.9.4",
   
   "scripts": {
-    "dev": "tsx botNode.ts",
-    "prestart": "npx agents download-files",
+   "dev": "npx agents dev botNode.ts",
     "build": "tsc",
     "start": "npx agents start  botNode.js"
     
